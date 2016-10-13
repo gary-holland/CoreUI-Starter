@@ -9,6 +9,8 @@ git clone https://github.com/gary-holland/CoreUI-Starter
 cd CoreUI-Starter\CoreUI-Starter
 cd CoreUI-Starter
 npm install
+webpack --config webpack.config.js
+webpack --config webpack.config.vendor.js
 dotnet restore
 dotnet run
 ```
