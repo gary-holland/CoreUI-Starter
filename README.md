@@ -9,6 +9,7 @@ git clone https://github.com/gary-holland/CoreUI-Starter
 cd CoreUI-Starter\CoreUI-Starter
 cd CoreUI-Starter
 npm install
+dotnet restore
 dotnet run
 ```
 Open browser to "http://localhost:5000" to view the application.
