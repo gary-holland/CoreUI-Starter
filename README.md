@@ -17,6 +17,6 @@ dotnet run
 Open browser to "http://localhost:5000" to view the application.
 
 Issues:
-* Server side rendering isn't functional yet.
+* Server side rendering isn't functional yet.  If anyone want to try and get it working, uncomment out the asp-prerender-module line in the Index.chtml.  It's output an error that it can't find the app element.
 
 Any contributions are welcome. 
