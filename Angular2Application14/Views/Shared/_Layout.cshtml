@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <base href="./">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+        <meta name="author" content="Łukasz Holeczek">
+        <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <title>CoreUI - Open Source Bootstrap Admin Template</title>
+        <!-- Icons -->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/simple-line-icons.css" rel="stylesheet">
+        <!-- Main styles for this application -->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        @*<link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />*@
+    </head>
+    <body class="navbar-fixed sidebar-nav fixed-nav">
+        @RenderBody()
+
+        @RenderSection("scripts", required: false)
+
+        <script src="~/assets/Scripts/Chart.min.js"></script>
+        <script src="~/assets/Scripts/Chart.bundle.min.js"></script>
+    </body>
+</html>
