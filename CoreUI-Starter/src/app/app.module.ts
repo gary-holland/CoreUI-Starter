@@ -1,7 +1,10 @@
 import { NgModule }                     from '@angular/core';
 import { BrowserModule }                from '@angular/platform-browser';
 import { LocationStrategy,
-    HashLocationStrategy }         from '@angular/common';
+    HashLocationStrategy
+} from '@angular/common';
+
+import { UniversalModule } from 'angular2-universal';
 
 import { AppComponent }                 from './app.component';
 import { Ng2BootstrapModule }           from 'ng2-bootstrap/ng2-bootstrap';
@@ -42,10 +45,16 @@ import { ChartsComponent }              from './charts/charts.component';
 import { p404Component }                from './pages/404.component';
 import { p500Component }                from './pages/500.component';
 import { LoginComponent }               from './pages/login.component';
-import { RegisterComponent }            from './pages/register.component';
+import { RegisterComponent } from './pages/register.component';
+
+//DotNet Samples
+import { HomeComponent } from './dotnet/home.component';
+import { CounterComponent } from './dotnet/counter.component';
+import { FetchDataComponent } from './dotnet/fetchdata.component';
 
 @NgModule({
     imports: [
+        UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
         BrowserModule,
         routing,
         Ng2BootstrapModule,
@@ -73,7 +82,10 @@ import { RegisterComponent }            from './pages/register.component';
         NAV_DROPDOWN_DIRECTIVES,
         BreadcrumbsComponent,
         SIDEBAR_TOGGLE_DIRECTIVES,
-        AsideToggleDirective
+        AsideToggleDirective,
+        HomeComponent,
+        CounterComponent,
+        FetchDataComponent
     ],
     providers: [{
         provide: LocationStrategy,

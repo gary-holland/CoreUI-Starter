@@ -31,6 +31,11 @@ import { p500Component }                from './pages/500.component';
 import { LoginComponent }               from './pages/login.component';
 import { RegisterComponent }            from './pages/register.component';
 
+//.net Samples
+import { HomeComponent } from './dotnet/home.component';
+import { CounterComponent } from './dotnet/counter.component';
+import { FetchDataComponent } from './dotnet/fetchdata.component';
+
 const appRoutes: Routes = [
     {
         path: '',
@@ -146,6 +151,38 @@ const appRoutes: Routes = [
                 data: {
                     title: 'Charts'
                 }
+            },
+            {
+                path: 'dotnet',
+                redirectTo: 'dotnet/home',
+                pathMatch: 'full',
+            },
+            {
+                path: 'dotnet',
+                data: { title: 'DotNet' },
+                children: [
+                    {
+                        path: 'home',
+                        component: HomeComponent,
+                        data: {
+                            title: 'Home'
+                        }
+                    },
+                    {
+                        path: 'counter',
+                        component: CounterComponent,
+                        data: {
+                            title: 'Counter'
+                        }
+                    },
+                    {
+                        path: 'fetchdata',
+                        component: FetchDataComponent,
+                        data: {
+                            title: 'FetchData'
+                        }
+                    },
+                ]
             }
         ]
     },

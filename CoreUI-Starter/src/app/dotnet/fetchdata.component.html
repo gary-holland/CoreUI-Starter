@@ -1,0 +1,32 @@
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-align-justify"></i> Weather forecast (this component demonstrates fetching data from the server.)
+                </div>
+                <div class="card-block">
+                    <p *ngIf="!forecasts"><em>Loading...</em></p>
+                    <table class="table" *ngIf="forecasts">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Temp. (C)</th>
+                                <th>Temp. (F)</th>
+                                <th>Summary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let forecast of forecasts">
+                                <td>{{ forecast.dateFormatted }}</td>
+                                <td>{{ forecast.temperatureC }}</td>
+                                <td>{{ forecast.temperatureF }}</td>
+                                <td>{{ forecast.summary }}</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
