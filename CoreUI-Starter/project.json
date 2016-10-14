@@ -44,7 +44,7 @@
     "compile": {
       "exclude": [ "node_modules" ]
     }
-    },
+  },
 
     "runtimeOptions": {
       "configProperties": {
