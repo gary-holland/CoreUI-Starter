@@ -1,11 +1,10 @@
-import 'angular2-universal-polyfills';
 import 'zone.js';
 import { enableProdMode } from '@angular/core';
-import { platformNodeDynamic } from 'angular2-universal';
+import { platformDynamicServer, PlatformState, INITIAL_CONFIG } from '@angular/platform-server';
 import { AppModule } from './app/';
 
 enableProdMode();
-const platform = platformNodeDynamic();
+const platform = platformDynamicServer();
 
 export default function (params: any) : Promise<{ html: string, globals?: any }> {
     return new Promise((resolve, reject) => {
@@ -27,7 +26,7 @@ export default function (params: any) : Promise<{ html: string, globals?: any }>
             }
         });
 
-        return requestZone.run<Promise<string>>(() => platform.serializeModule(AppModule)).then(html => {
+        return requestZone.run<Promise<string>>(() => platform.bootstrapModule(AppModule)).then(html => {
             resolve({ html: html });
         }, reject);
     });

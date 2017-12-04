@@ -4,7 +4,7 @@ import { LocationStrategy,
     HashLocationStrategy
 } from '@angular/common';
 
-import { UniversalModule } from 'angular2-universal';
+// import { UniversalModule } from 'angular2-universal';
 
 import { AppComponent }                 from './app.component';
 import { Ng2BootstrapModule }           from 'ng2-bootstrap/ng2-bootstrap';
@@ -54,7 +54,7 @@ import { FetchDataComponent } from './dotnet/fetchdata.component';
 
 @NgModule({
     imports: [
-        UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
+//        UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
         BrowserModule,
         routing,
         Ng2BootstrapModule,

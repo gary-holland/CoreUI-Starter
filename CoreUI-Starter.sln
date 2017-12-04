@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreUI-Starter", "CoreUI-Starter\CoreUI-Starter.xproj", "{689B16FC-AF1B-46DD-9CBA-A4F298B98F05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreUI-Starter", "CoreUI-Starter\CoreUI-Starter.csproj", "{689B16FC-AF1B-46DD-9CBA-A4F298B98F05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D81E2F1-6472-432D-9D5B-F5D349017259}
 	EndGlobalSection
 EndGlobal

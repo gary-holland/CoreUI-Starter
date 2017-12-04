@@ -1,5 +1,6 @@
 # CoreUI-Starter
 
+
 This is a clone of the [CoreUI](https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template) integrated into the [.Net Core Angular2Spa starter template](https://github.com/aspnet/JavaScriptServices/tree/dev/templates/Angular2Spa).
 
 To use this template open a command prompt and run the following:
@@ -17,6 +18,7 @@ dotnet run
 Open browser to "http://localhost:5000" to view the application.
 
 Issues:
-* Server side rendering isn't functional yet.  If anyone want to try and get it working, uncomment out the asp-prerender-module line in the Index.chtml.  It's output an error that it can't find the app element.
+* In progress updating to .net core 2.0, and angular 5.  Not currently working.
+* Server side rendering isn't functional yet.  If anyone wants to try and get it working, uncomment out the asp-prerender-module line in the Index.chtml.  It's output an error that it can't find the app element.
 
 Any contributions are welcome. 
